@@ -4,7 +4,9 @@ kmax= 20
 for k in range(kmax):
     r=s
     s= 0.5 *(s+ (x/s))
+    print(f"at iteration no. {k} is s={s}")
     e=(s-r)/x
     print(s)
     if abs(e) < 1e-04:
      break
+print(f"finally the value of s={s}")     
